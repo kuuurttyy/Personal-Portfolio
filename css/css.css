@@ -2,7 +2,8 @@ a {
     color: #641905;
 }
 #header {
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */ 
+    padding: 35px;
 }
 #footer {
     text-align: center;
