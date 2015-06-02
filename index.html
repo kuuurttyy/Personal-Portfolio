@@ -135,9 +135,7 @@
 
     </div>
     <!-- close page container -->
-
-
-
+    
     <!-- Include the imagesLoaded plug-in -->
     <script src="js/jquery.imagesloaded.js"></script>
     <!-- Include the plug-in -->
@@ -161,27 +159,22 @@
 
                 // Call the layout function.
                 handler.wookmark(options);
-
-                /**
-                 * When a filter is clicked, toggle it's active state and refresh.
-                 */
+                
+                //When a filter is clicked, toggle it's active state and refresh.
+                 
                 var onClickFilter = function (event) {
                     var item = $(event.currentTarget),
                         activeFilters = [];
-
                     if (!item.hasClass('active')) {
                         filters.removeClass('active');
                     }
                     item.toggleClass('active');
-
                     // Filter by the currently selected filter
                     if (item.hasClass('active')) {
                         activeFilters.push(item.data('filter'));
                     }
-
                     handler.wookmarkInstance.filter(activeFilters);
                 }
-
                 // Capture filter click events.
                 filters.click(onClickFilter);
             });
