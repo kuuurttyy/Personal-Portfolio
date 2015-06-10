@@ -62,6 +62,10 @@ a {
     margin-bottom: 1%;
 }
 
+.web-tab {
+    min-height: 100%;
+    margin: 25px 0 10px 0;
+}
 /* ----- Portfolio Grid container ----- */
 
 #tiles {
@@ -75,8 +79,8 @@ a {
 /* ----- Portfolio Filters ----- */
 
 #filters {
-    border-top: 1px #aaa solid;
-    border-bottom: 1px #aaa solid;
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
 }
 #filters a {
     padding: 10px 0;

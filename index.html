@@ -38,106 +38,143 @@
             </div>
         </div>
         <!-- close page header -->
-       
-        <ul class="nav nav-tabs">
-            <li role="presentation" class="active"><a href="#">Portfolio</a>
-            </li>
-            <li role="presentation"><a href="#">About</a>
-            </li>
-            <li role="presentation"><a href="#">Contact</a>
-            </li>
-        </ul>
-        <div class="row">
-            <h1>Portfolio Filters</h1>
-        </div>
 
-        <div class="row" id="filters">
-            <div class="btn-group btn-group-justified" role="group" aria-label="Filters">
-                <a type="button" class="btn btn-default" data-filter="design">Design</a>
-                <a type="button" class="btn btn-default" data-filter="web">Web</a>
-                <a type="button" class="btn btn-default" data-filter="animation">Animation</a>
-                <a type="button" class="btn btn-default" data-filter="interactive">Interactive</a>
+
+        <div class="container">
+            <div class="row tabbable">
+                <div class="row">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#portfolio" data-toggle="tab">PORTFOLIO</a>
+                        </li>
+                        <li><a href="#about" data-toggle="tab">ABOUT</a>
+                        </li>
+                        <li><a href="#contact" data-toggle="tab">CONTACT</a>
+                        </li>
+                        <li><a href="http://kurtstubbings.com/blog/" target="_blank">BLOG</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="tab-content">
+                    <div id="portfolio" class="tab-pane active web-tab">
+                        <div class="row" id="filters">
+                            <div class="btn-group btn-group-justified" role="group" aria-label="Filters">
+                                <a type="button" class="btn btn-default" data-filter="design">Design</a>
+                                <a type="button" class="btn btn-default" data-filter="web">Web</a>
+                                <a type="button" class="btn btn-default" data-filter="animation">Animation</a>
+                                <a type="button" class="btn btn-default" data-filter="interactive">Interactive</a>
+                            </div>
+                        </div>
+
+                        <div id="main" role="main">
+
+                            <ul id="tiles">
+                                <!--
+                                These are the grid items. Each one has classes assigned that
+                                are used for filtering. The classes match the "data-filter" properties above.
+                                -->
+                                <li data-filter-class='["design", "web"]'>
+                                    <a href="aylesburyskateboards.html">
+                                        <img class="folioImage" src="images/asb.jpg">
+                                        <p class='title'>Aylesbury Skateboards</p>
+                                    </a>
+
+                                </li>
+
+                                <li data-filter-class='["design"]'>
+                                    <a href="buybits.html">
+                                        <img class="folioImage" src="images/buybits.jpg">
+                                        <p class='title'>BuyBits Logo Design</p>
+                                    </a>
+
+                                </li>
+                                <li data-filter-class='["design"]'>
+                                    <a href="dmnd.html">
+                                        <img src="images/dmnd.jpg">
+                                        <p class='title'>A2 Product Design Coursework</p>
+                                    </a>
+
+                                </li>
+                                <li data-filter-class='["design", "web"]'>
+                                    <a href="convex.html">
+                                        <img src="images/convex.jpg">
+                                        <p class='title'>Convex: Brand Project</p>
+                                    </a>
+
+                                </li>
+                                <li data-filter-class='["animation"]'>
+                                    <a href="kineticTypography.html">
+                                        <img src="images/kineticTypography.gif">
+                                        <p class='title'>Kinetic Typography</p>
+                                    </a>
+
+                                </li>
+                                <li data-filter-class='["animation", "web", "design"]'>
+                                    <a href="recoveryRoad.html">
+                                        <img src="images/recoveryRoad.gif">
+                                        <p class='title'>Recovery Road</p>
+                                    </a>
+
+                                </li>
+                                <li data-filter-class='["web"]'>
+                                    <a href="oldportfolio.html">
+                                        <img src="images/portfolio.jpg">
+                                        <p class='title'>Old Portfolio Site</p>
+                                    </a>
+
+                                </li>
+                                <!-- End of grid blocks -->
+                            </ul>
+
+                        </div>
+                        <!-- close #main for wookmark -->
+
+                    </div>
+                    <div id="about" class="tab-pane web-tab">
+                        <!-- <h1>About Me -->
+                        <div class="col-sm-5 col-md-4">
+                            <img src="images/aboutpic.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-sm-7 col-md-8">
+                            <p>Hey, I'm Kurt Stubbings and I am currently studying Digital Media Design at Bournemouth University. I love anything arty or computer-y and am always trying to improve my skills in both design and development. </p>
+                            <p>Shepherd's beaked whale Fin whale Southern right whale dolphin Blue whale Dwarf sperm whale True's beaked whale Ginkgo toothed beaked whale Short-beaked common dolphin Gray's beaked whale North atlantic right whale Heaviside's dolphin Peale's dolphin Tucuxi dolphin Indus river dolphin Commerson's dolphin Pantropical spotted dolphin Stejneger's beaked whale Perrin's beaked whale Bryde's whale Spade-toothed whale Spinner dolphin Dwarf minke whale Rough-toothed dolphin Northern right whale dolphin Long-finned pilot whale North pacific right whale Irrawaddy dolphin Killer whale Common bottlenose dolphin Omura's whale Andrew's beaked whale Gray whale Pygmy Byrde's whale Antarctic or southern minke whale </p>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>Adobe Creatve Suite (CS6 &amp;CC)</li>
+                                <li>HTML &amp;CSS</li>
+                                <li>Javascript/ jQuery</li>
+                                <li>PHP</li>
+                                <li>Swift (iOS Applications)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="contact" class="tab-pane web-tab">
+                        <h1>Any Questions?</h1>
+                        <p>Don't hesitate to ask if you have any questions. You can message me here on the contact form below or get in touch on either Facebook or Twitter</p>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputMessage" class="col-sm-2 control-label">Message</label>
+                                <div class="col-sm-10">
+                                    <textarea type="textarea" class="form-control" rows="5" id="inputMessage" placeholder="Hi there..."></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--/.tab-content-->
             </div>
         </div>
-
-        <div id="main" role="main">
-
-            <ul id="tiles">
-                <!--
-          These are the grid items. Each one has classes assigned that
-          are used for filtering. The classes match the "data-filter" properties above.
-          -->
-
-                <li data-filter-class='["design", "web"]'>
-                    <a href="aylesburyskateboards.html">
-                        <img class="folioImage" src="images/asb.jpg">
-                        <p class='title'>Aylesbury Skateboards</p>
-                    </a>
-
-                </li>
-
-                <li data-filter-class='["design"]'>
-                    <a href="buybits.html">
-                        <img class="folioImage" src="images/buybits.jpg">
-                        <p class='title'>BuyBits Logo Design</p>
-                    </a>
-
-                </li>
-                <li data-filter-class='["design"]'>
-                    <a href="dmnd.html">
-                        <img src="images/dmnd.jpg">
-                        <p class='title'>A2 Product Design Coursework</p>
-                    </a>
-
-                </li>
-                <li data-filter-class='["design", "web"]'>
-                    <a href="convex.html">
-                        <img src="images/convex.jpg">
-                        <p class='title'>Convex: Brand Project</p>
-                    </a>
-
-                </li>
-                <li data-filter-class='["animation"]'>
-                    <a href="kineticTypography.html">
-                        <img src="images/kineticTypography.gif">
-                        <p class='title'>Kinetic Typography</p>
-                    </a>
-
-                </li>
-                <li data-filter-class='["animation", "web", "design"]'>
-                    <a href="recoveryRoad.html">
-                        <img src="images/recoveryRoad.gif">
-                        <p class='title'>Recovery Road</p>
-                    </a>
-
-                </li>
-                <li data-filter-class='["web"]'>
-                    <a href="oldportfolio.html">
-                        <img src="images/portfolio.jpg">
-                        <p class='title'>Old Portfolio Site</p>
-                    </a>
-
-                </li>
-                <!-- End of grid blocks -->
-            </ul>
-
-        </div>
-        <!-- close #main for wookmark -->
-
-        <!--
-        <div class="row">
-            <div class="col-md-12">
-                <h1>About Me</h1>
-            </div>
-            <div class="col-md-6">
-                <p>My name is Kurt Stubbings and I'm currently in my second year studying Digital Media Design at Bournemouth University.</p>
-            </div>
-            <div class="col-md-6">
-                <p>words and stuff</p>
-            </div>
-        </div>
-
-       -->
+        <!--/.container-->
 
         <div class="col-md-12" id="footer">
             <p>kurt stubbings 2014-15</p>
@@ -149,24 +186,6 @@
 
     </div>
     <!-- close page container -->
-
-    <!--
-       <div class="container-fluid about">
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                <h1>About Me</h1>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-responsive center-block" src="http://www.placehold.it/500x500/">
-                    </div>
-                    <div class="col-md-6">
-                        <p>My name is Kurt Stubbings and I am currently a student studying Digital Media Design at Bournemouth University</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
 
     <!-- Include the imagesLoaded plug-in -->
     <script src="js/jquery.imagesloaded.js"></script>
