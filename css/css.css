@@ -10,8 +10,8 @@ body {
     font-size: 1.4rem;
 }
 #main {
-    margin: 30px 0;
-    position: relative;
+    margin: 30px 0; 
+    position: relative; 
 }
 header h1 {
     text-align: center;
@@ -57,16 +57,10 @@ a {
 #main {
     overflow: hidden;
 }
-/* ----- Grid items animation -----*/
 
-/*
-.wookmark-placeholder {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+#logo {
+    margin-bottom: 1%;
 }
-*/
 
 /* ----- Portfolio Grid container ----- */
 
@@ -81,8 +75,8 @@ a {
 /* ----- Portfolio Filters ----- */
 
 #filters {
-    border-top: 1px #666666 solid;
-    border-bottom: 1px #666666 solid;
+    border-top: 1px #aaa solid;
+    border-bottom: 1px #aaa solid;
 }
 #filters a {
     padding: 10px 0;
@@ -158,6 +152,13 @@ a {
     margin: 7px 0 2px 7px;
 }
 
+/* ----- homepage About Section ----- */
+
+.about {
+    background-color: #333;
+    color: #fff;
+}
+
 /* ----- PORTFOLIO PAGES ----- */
 
 /* Embedded videos */
@@ -186,6 +187,7 @@ a {
 
 
 
+/*
 #leftArrow {
     position: absolute;
     left: 0;
@@ -221,3 +223,4 @@ a {
     width: 65%;
     padding-top: 20%;
 }
+*/
