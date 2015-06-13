@@ -90,6 +90,10 @@ a {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
+#filters a:hover {
+    background: #333
+}
 /* ----- Grid items ----- */
 
 #tiles li {
@@ -188,43 +192,3 @@ a {
 .backButton:hover {
     left: 0px;
 }
-
-
-
-/*
-#leftArrow {
-    position: absolute;
-    left: 0;
-    top: 0;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-#leftArrow:hover {
-    left: -5px;
-}
-#rightArrow {
-    position: absolute;
-    right: 0;
-    top: 0;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-#rightArrow:hover {
-    right: -5px;
-}
-
-.portfolioTitle {
-    padding-bottom: 10px;
-}
-.portfolioTitle h1 {
-    color: #641905;
-}
-.portfolioTitle img {
-    width: 65%;
-    padding-top: 20%;
-}
-*/
